@@ -173,7 +173,7 @@ h2{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(2.6rem
 
 /* reveals — hidden ONLY when JS is active, so a CDN/GSAP failure never hides content */
 .js .reveal{opacity:0;transform:translateY(26px)}
-.is-in{opacity:1;transform:none;transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .reveal.is-in{opacity:1;transform:none;transition:opacity 1s var(--ease),transform 1s var(--ease)}
 
 /* hero intro — CSS/compositor driven, so it never depends on rAF or GSAP being alive */
 .js .hero-title .line > span,
