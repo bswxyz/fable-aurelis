@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>AURELIS — Guide · How this was built</title>
-<meta name="description" content="How the AURELIS site was designed and built with Fable: a fluid-noise WebGL shader, GSAP motion, and GitHub Pages." />
+<meta name="description" content="How the AURELIS site was designed and built with Formwork: a fluid-noise WebGL shader, GSAP motion, and GitHub Pages." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -46,7 +46,7 @@
 
   <span class="tag">Build guide · Site 01 of 25</span>
   <h1>A fragrance house, rendered as <em>living light</em>.</h1>
-  <p class="lede">AURELIS is one of 25 sites designed and built by Fable to demonstrate
+  <p class="lede">AURELIS is one of 25 sites designed and built by Formwork to demonstrate
     web design, motion, and taste. Here's exactly how this one was made — and how you can do the same.</p>
 
   <h2>The idea</h2>
@@ -87,8 +87,8 @@ col = mix(col, gold, f*1.1 + uv.y); // gold blooms upward</code></pre>
   <h2>Ship it on GitHub Pages</h2>
   <p>Every site here is static, so hosting is three commands:</p>
   <pre><code>git init -b main && git add -A && git commit -m "ship"
-gh repo create fable-aurelis --public --source=. --push
-gh api --method POST /repos/OWNER/fable-aurelis/pages \
+gh repo create formwork-aurelis --public --source=. --push
+gh api --method POST /repos/OWNER/formwork-aurelis/pages \
   -f 'source[branch]=main' -f 'source[path]=/'</code></pre>
   <p>Use <strong>relative paths</strong> (<code>./main.js</code>, not <code>/main.js</code>) because project
     Pages live under <code>/repo-name/</code>. Add an empty <code>.nojekyll</code> file so every asset serves verbatim.</p>
@@ -98,7 +98,7 @@ gh api --method POST /repos/OWNER/fable-aurelis/pages \
     The other 24 sites each swap the central technique — particles, raymarching, isometric 3D,
     audio-reactive gradients — but the discipline is the same.</p>
 
-  <footer>Designed &amp; built by <strong>Fable</strong> · Part of a 25-site showcase · <a href="../">Return to AURELIS →</a></footer>
+  <footer>Designed &amp; built by <strong>Formwork</strong> · Part of a 25-site showcase · <a href="../">Return to AURELIS →</a></footer>
 </div>
 </body>
 </html>
